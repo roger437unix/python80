@@ -1,0 +1,21 @@
+
+** Exercício - Uso de API em Python **
+
+1. Elabore um programa em Python que solicite que o 
+usuário informe seu nome e CEP. Por meio do CEP, acessar 
+o portal do viacep.com.br e obter a rua, bairro, 
+cidade e estado. Exibir na tela essas informações.
+
+Nome: Mickey Mouse
+Rua: Elton Silva
+Cep: 06600-025
+Bairro: Centro
+Cidade: Jandira
+UF: SP
+
+
+2. Elabore um programa que faça a conversão de Dolar [U$]
+para Real [R$]. Utilizar alguma API que retorne a 
+taxa de conversão do dia, por exemplo:
+
+https://economia.awesomeapi.com.br/last/USD-BRL

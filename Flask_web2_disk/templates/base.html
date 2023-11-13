@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Flask</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head>
+
+<body>
+    <div style="margin-top: 50px;" class="ui container">
+        <h1 class="ui center aligned header" style="color:#020831">Agenda Flask Python</h1>        
+        
+        <form class="ui form" action="/add" method="post" id="formAdd">
+            <div class="field">
+                <label>Dados pessoais</label>
+                <input type="text" name="nome"  placeholder="Seu nome..."><br><br>
+                <input type="text" name="fone"  placeholder="fone..."><br><br>
+                <input type="text" name="email" placeholder="e-mail..."><br><br>                
+            </div>              
+        </form>
+        <br>
+        <div style="display: flex;">
+            <button class="ui blue button" type="button" id="add">Adicionar</button>
+
+            <form class="ui form" action="/sort" method="post">
+                <button class="ui yellow button" type="submit">Ordem alfabética</button>
+            </form>
+
+            <form class="ui form" action="/reverse" method="post">
+                <button class="ui orange button" type="submit">Ordem reversa</button>
+            </form>
+                      
+            <form class="ui form" action="/clear" method="post">
+                <button class="ui red button" type="submit">Apagar agenda</button>
+            </form>
+        </div>
+
+        <hr>
+
+        {% for lista in lista_front %}
+        <div class="ui segment">
+            <p class="ui big header">{{lista[0]}}&emsp;&emsp;|&emsp;&emsp;{{lista[1]}}&emsp;&emsp;|&emsp;&emsp;{{lista[2]}}</p>
+            
+            <!-- <a class="ui green button" href="/update/{{ lista[0] }}">Update</a> -->
+            <a class="ui green button" href="/delete/{{ lista[0] }}">Delete</a>            
+        </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        const add = document.getElementById('add')
+        const form = document.getElementById('formAdd')
+        add.addEventListener('click', ()=> form.submit())
+    </script>
+</body>
+
+</html>

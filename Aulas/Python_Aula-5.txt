@@ -1,0 +1,184 @@
+﻿
+Aula 5
+
+* Funções de I/O em Python
+
+
+==> print()
+
+nome = "Ana Maria"
+print(f'Seu nome é {nome}')
+
+
+---------------------------------------------------------------------------------
+
+
+** Argumentos de palavra-chave [key-word]
+
+Sempre após os argumentos posicionais;
+
+
+nome = "Barbie"
+sobrenome = "Girl"
+
+print(f'Seja bem-vinda Sra {nome}', end=" ")
+print(sobrenome)
+
+
+---------------------------------------------------------------------------------
+
+
+Exercício 1
+
+Tenha um nome e ano de nascimento.
+Exiba na tela a idade e uma saudação para a pessoa.
+
+
+---------------------------------------------------------------------------------
+
+
+==> Input()
+
+
+nome = input('Informe seu nome: ')
+
+print('Seja bem-vindo(a) {nome}')
+
+
+---------------------------------------------------------------------------------
+
+
+** Funções de conversão
+
+int()
+float()
+
+
+ano_nasc_str = input('Iforme seu ano de nascimento: ')
+
+ano_nasc = int(ano_nasc_str)
+
+
+---------------------------------------------------------------------------------
+
+Exercício 2
+
+Obter o peso e a altura do usuário e calcular o IMC (Índice de massa corpóreo).
+Exibindo na tela o peso, a altura e o imc.
+
+imc = peso / altura²
+
+
+---------------------------------------------------------------------------------
+
+Explicação
+
+
+q = ax² + bx
+
+0 = q + c
+
+ .
+. .  0 = ax² + bx + c
+
+
+peso_str = input('Informe seu peso: ')
+
+peso = float(peso_str)
+
+
+ .
+. .  peso = float(input('Informe seu peso: '))
+
+
+---------------------------------------------------------------------------------
+
+
+peso   = float(input('Informe seu peso: '))
+altura = float(input('Informe sua altura: '))
+
+# imc = peso / (altura * altura)
+
+# imc = peso / altura ** 2
+
+import math
+imc = peso / math.pow(altura, 2)
+
+####### Ver documentação Math Library #######
+
+
+print(f'Peso: {peso}\nAltura: {altura}')
+print(f'Imc: {imc}')
+
+print(f'Imc: {round(imc, 1)}')
+
+
+---------------------------------------------------------------------------------
+
+
+Exercícios
+
+1. Crie um programa em Python que solicite o valor da base e altura e calcule a área de um retângulo,
+apresentando no final todos os valores na tela.
+
+area_retangulo = base x altura
+
+
+2. Crie um programa em Python que solicite o valor da base e altura e calcule a área de um triângulo,
+apresentando no final todos os valores na tela.
+
+area_retangulo = base x altura / 2
+
+
+3. Crie um programa em Python que calcule o perímetro de uma circunferência e exiba o valor arredondado
+com duas casas decimais.
+
+perimetro_circ = 2 * π * raio
+
+
+4. Crie um programa em Python que calcule a área de uma circunferência e exiba o valor arredondado
+com duas casas decimais.
+
+area_circ = π * raio²
+
+
+5. Ler dois números decimais a apresente na tela:
+
+- Soma dos dois números
+- Subtração dos dois números
+- Multiplicação dos dois números
+- Divisão dos dois números
+- Potência do primeiro elevado pelo segundo
+- Módulo (resto da divisão) entre os dois números [%]
+- Raiz quadrada dos dois números [math.sqrt()]
+
+
+6. Crie um programa em Python para calcular o valor final de uma compra, com desconto percentual qualquer.
+   Deve ser informado o valor da compra e o percentual de desconto.
+
+
+7. Crie um programa em Python que faça a conversão de um valor em Dólar [USA] para o seu equivalente em Real.
+   Deve ser informada a taxa de câmbio e o valor em dolar para a conversão.
+
+
+8. Crie um programa em Python para converter e exibir uma temperatura de graus Celsius para graus Fahrenheit.
+
+
+Fahrenheit = 9 x Celsius + 160
+             -----------------
+                     5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

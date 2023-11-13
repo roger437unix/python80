@@ -1,0 +1,93 @@
+* Operadores aritméticos
+de atribuição
+
++=
+-=
+*=
+/=
+//=
+**=
+%=
+n = 10
+n += 5
+
+n1 = 10
+n1 %= 7
+-------------------------------------------------
+
+Comentários de código
+
+Comentário de linha 
+# Cerquilha [hash]
+"""
+linha 1
+linha 2
+linha 3
+"""
+
+--------------------------
+Operadores relacionais
+[comparação]
+> maior que
+>= maior ou igual
+< menor que
+<= menor ou igual
+== igualdade
+!= diferente
+* Com os operadores
+relacionais, nós criamos
+testes lógicos.
+
+Balada
+
+idade = 15
+
+idade > 17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

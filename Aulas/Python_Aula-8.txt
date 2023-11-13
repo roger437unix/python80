@@ -1,0 +1,11 @@
+Exercío 1
+Fazer um programa em Python que informa
+seu um número é positivo ou negativo.
+
+Obs.: Considerar o zero como positivo
+
+-------------------------------------------
+
+Exercício 2
+Fazer um programa que informe se um número
+é par ou impar.

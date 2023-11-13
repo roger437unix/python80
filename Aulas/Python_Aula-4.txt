@@ -1,0 +1,94 @@
+Aula - 4
+
+* Variáveis
+
+Variável é um espaço reservado na memória [RAM] para armazenar informações de um tipo predefinido.
+
+* Tipos de variáveis em Python
+
+int	[nºs inteiros]
+float	[nºs decimais]
+string	[texto] => letras/palavras/frases
+boolean	[True/False]
+
+-Python possue tipagem dinâmica.
+
+
+---------------------------------------------------------------------------------
+
+
+- Exercício-1
+
+Faça um programe que mostre pelo Terminal interativo do Python a média aritmética
+entre quatro valores decimais.
+
+
+---------------------------------------------------------------------------------
+
+
+* Operadores matemáticos (aritméticos)
+
+Soma		+
+Subtração	-
+Multiplicação	*
+Divisão		/
+Potência	**
+Atribuição	=
+
+
+---------------------------------------------------------------------------------
+
+
+- Exercício 2
+
+Pelo terminal interativo do Python, faça um código que teste a geração do nº
+de Euler [e] = 2.71
+
+n = [número qq à partir de 164]
+
+    ( 1 + 1) ^ n
+e =      ---
+          n
+
+e = (1 + 1/n)**n
+
+print(f'Nº de Euler = {e}')
+
+Obs.: 'n' pode ser qq número à partir de 164.
+
+
+
+from os import system
+import random
+
+q = sy('cls')
+n = random.randint(164, 1 * 10**10)
+e = (1 + 1/n)**n
+print(f'\nn aleatório = {n}\nNº de Euler = {e}\n')
+
+
+---------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
