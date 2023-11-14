@@ -1,3 +1,3 @@
-![image](https://miro.medium.com/v2/resize:fit:1200/1*ycIMlwgwicqlO6PcFRA-Iw.png)
+![image](https://blog.rocketseat.com.br/content/images/size/w600/2022/02/python-linguagem-rocketseat-blog.png)
 
 ## Aulas do curso de Python 80hs
